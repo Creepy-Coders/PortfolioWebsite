@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thabo's Portfolio</title>
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">My <span>Professional </span>Portfolio</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="pitch.html">Elevator Pitch</a></li>
+                <li><a href="work.html">Portfolio Work</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey,</h3>
+            <h2>I am <span id="text"></span></h2>
+            <p>
+                <i>And I form a bridge between your business and the cloud.</i>
+            </p>
+            <button>Res&#250;me</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>Let's Chat</button>
+        </div>
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRbMKGwWDpq8_FAjS_ltB29wTeo_TDLdhwmDEiSwv_d_qgqrZEd_iFayhrHaFhvkYT59EErUHrw2TQndTI" alt="" srcset="" width="350px" height="450px">
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-skype"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/sekgothothabo"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+
+        let typingText = new Typed("#text", 
+        {
+            strings : ["Thabo Sekgotho"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 1000,
+        })
+        let banner = document.querySelector('.banner');
+        let dayNight = document.querySelector('.dayNight');
+        dayNight.onclick = function()
+        {
+            banner.classList.toggle();
+        }
+    </script>
+</body>
+</html>
